@@ -9,7 +9,7 @@ var charUp = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "
 
 function generatePassword() {
   var charLength = (prompt("How long do you want your password to be from 8 - 128 Characters"));
-    while(charLength < 8 || charLength > 128 ) {
+    while(charLength < 8 || charLength > 128 || (isNaN(charLength))) {
       alert("Try again");
       charLength = (prompt("How long do you want your password to be from 8 - 128 Characters"));
   }
